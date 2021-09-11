@@ -3,7 +3,6 @@
 	 padding: 0;
 	 margin: 0
 }
-
 body{
     width: 100%;
     height: 100%;
@@ -42,12 +41,12 @@ main{
 }
 
 .input-container {
-	position:relative;
-	background: ;
+	  position:relative;
+	  background: ;
 
     width: 40%;    
-	display: flex;
-	justify-content: space-between;
+	  display: flex;
+	  justify-content: space-between;
     align-items: center;
 
 }
@@ -55,8 +54,8 @@ main{
 .busca{
     width: 100%;    
     padding: 12px;
-	border: none;
-	border-radius: 10px;
+	  border: none;
+	  border-radius: 10px;
 }
 
 .busca:hover {
@@ -87,5 +86,5 @@ main{
 
 .carrinho-de-compras {
     display: inline-block;
-    width: ;
+    width:;
 }
