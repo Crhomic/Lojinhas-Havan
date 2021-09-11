@@ -1,33 +1,91 @@
-* {padding: 0; margin: 0;}
+* {
+ 	 box-sizing: border-box;
+	 padding: 0;
+	 margin: 0
+}
+
 body{
     width: 100%;
     height: 100%;
-    margin: 2 2;
 }
 .menu-principal{
     width: 100%;
     background-color: #0063ff;
     height: 90px;
+
+    /* esse codigo transforma o .menu-principal em flex box e alinha
+     * a main na vertical usando a propriedade align-items: center
+     */
+    display: flex;
+    flex-direction: row;
+    justify-content: ;
+    align-items: center; /* ---- auqui ---- */
+    align-content: ;
+
 }
 
 main{
+    /* aqui tambem transforma a main em flex box para que as classes:
+     * .logo   .busca   .carrinho-de-compras
+     * possam ser alinhadas ao center e na horizontal dentro do .menu-principal
+     */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    
+    background:;
     margin: 0 auto;
-    width: 1300px;
+    width: 1200px;
     position: relative;
 }
-.logo{
-    float: left;
-    padding: 16px;
-    width: 30%;
-}
-.menu{
-    width: 45%;    
-    padding: 15px;
-    float: left;
+
+.input-container {
+	position:relative;
+	background: ;
+
+    width: 40%;    
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+
 }
 
-.carrinho-de-compras ul li{
+.busca{
+    width: 100%;    
+    padding: 12px;
+	border: none;
+	border-radius: 10px;
+}
+
+.busca:hover {
+		cursor: pointer;
+		border: 3px solid blue;
+}
+.busca:focus {
+		background: ;
+		border: 3px solid blue;
+		outline: none;
+}
+
+.lupa {
+		background: blue;
+		padding: 8px 15px;
+		border-radius: 10px;
+		position: absolute;
+		right: 0;
+}
+.lupa:hover {
+	cursor: pointer;
+	border:3px solid green;
+}
+
+.logo{
+    width: 10rem;
+}
+
+.carrinho-de-compras {
     display: inline-block;
-    width: 15%;
-    padding: 19px;
+    width: ;
 }
