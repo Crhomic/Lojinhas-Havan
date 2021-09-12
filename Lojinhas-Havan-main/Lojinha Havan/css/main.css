@@ -1,0 +1,91 @@
+* {
+ 	 box-sizing: border-box;
+	 padding: 0;
+	 margin: 0
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.menu-principal{
+    width: 100%;
+    background-color: #0063ff;
+    height: 90px;
+
+    /* esse codigo transforma o .menu-principal em flex box e alinha
+     * a main na vertical usando a propriedade align-items: center
+     */
+    display: flex;
+    flex-direction: row;
+    justify-content: none;
+    align-items: center; /* ---- auqui ---- */
+    align-content:none ;
+
+}
+
+main{
+    /* aqui tambem transforma a main em flex box para que as classes:
+     * .logo   .busca   .carrinho-de-compras
+     * possam ser alinhadas ao center e na horizontal dentro do .menu-principal
+     */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    
+    background: #0063ff;
+    margin: 0 auto;
+    width: 1200px;
+    position: relative;
+}
+
+.input-container {
+	  position:relative;
+	  background: none;
+
+    width: 40%;    
+	  display: flex;
+	  justify-content: space-between;
+    align-items: center;
+
+}
+
+.busca{
+    width: 100%;    
+    padding: 12px;
+	  border: none;
+	  border-radius: 10px;
+}
+
+.busca:hover {
+		cursor: pointer;
+		border: 3px solid blue;
+}
+.busca:focus {
+		background: none;
+		border: 3px solid blue;
+		outline: none;
+}
+
+.lupa {
+		background: blue;
+		padding: 8px 15px;
+		border-radius: 10px;
+		position: absolute;
+		right: 0;
+}
+.lupa:hover {
+	cursor: pointer;
+	border:3px solid green;
+}
+
+.logo{
+    width: 10rem;
+}
+
+.carrinho-de-compras {
+
+    display: inline-block;
+    width:none;
+}
