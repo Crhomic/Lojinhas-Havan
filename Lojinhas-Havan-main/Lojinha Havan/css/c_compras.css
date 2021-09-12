@@ -53,7 +53,7 @@ main{
       border: 3px solid blue;
 }
 .busca:focus {
-      background: none;
+      background: white;
       border: 3px solid blue;
       outline: none;
 }
@@ -86,9 +86,10 @@ main{
 
 .car_compras{
   text-transform: uppercase;
+  text-shadow: 1px 1px 2px #414141;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 30px;
   margin: 35px 50px 0px;
 }
 .compras h2{
@@ -98,6 +99,7 @@ main{
 }
 
 .compras h3{
+  text-shadow: 1px 1px 2px #414141;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
@@ -128,6 +130,8 @@ main{
   margin-top: auto;
   font-size: 22px;
   font-weight: 700;
+  color: #0063ff;
+  text-shadow: 1px 1px 2px #414141;
 }
 
 .compra1{
@@ -149,9 +153,16 @@ main{
 .tit_desc h2{
   width: 90%;
   font-style: italic;
+  color: #0063ff;
 }
 .multiple_spaces{
   margin: 6px;
+}
+.del{
+  text-shadow: 1px 1px 1px #cacaca;
+}
+.save{
+  text-shadow: 1px 1px 1px #cacaca;
 }
 
 .e_est{
@@ -164,6 +175,7 @@ main{
   font-size: 14px;
 }
 .k_case{
+  text-shadow: 1px 1px 1px #cacaca;
   color: #007185;
   font-size: 14px;
   cursor: hand;
@@ -173,6 +185,7 @@ main{
   font-size: 14px;
 }
 .s_mais{
+  text-shadow: 1px 1px 1px #cacaca;
   color: #007185;
   font-size: 14px;
   cursor: hand;
@@ -202,7 +215,11 @@ main{
   cursor: hand; 
 }
 
+
+
 /*----Rodapé do Carrinho de Compras--*/
+
+
 
 .rodape{
   position: relative;
@@ -212,19 +229,86 @@ main{
   height: auto;
   background-color: rgb(243, 243, 243);
 }
+.hr1{
+  border-color:transparent;
+  margin: 30px;
+}
+
+.hr2{
+  border-color: rgb(255, 255, 255);
+  margin: 50px 50px 30px;
+}
+
+
 .f_pedidos{
-  position: relative;
-  margin: 0 0 15px 0;
-  top: 17px;
-  left: 15px;
-  font-style: normal;
+  position: absolute;
+  margin: 10px 0px 25px 250px;
+  top: 5px;
   font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-shadow: 1px 1px 2px #414141;
+
 }
 .sub_total{
+  margin:0 0 20px 0;
   position: relative;
-  left: 500px;
-  right: auto;
+  left: 15px;
   text-transform: uppercase;
-  font-style: normal;
+  font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 2px #414141;
+
+}
+.preco_subtotal{
+  position: absolute;
+  right: 30px;
+  color: #0063ff;
+  text-shadow: 1px 1px 2px #414141;
+}
+.frete{
+  margin: 0 0 20px 0;
+  position: relative;
+  left: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 2px #414141;
+}
+.valor_total{
+  margin: 0 0 20px 0;
+  position: relative;
+  left: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 2px #414141;
+  font-size: 20px;
+}
+.desconto{
+  margin: 0 0 20px 0;
+  position: relative;
+  left: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 2px #414141;
+}
+.preco_desconto{
+  position: absolute;
+  right: 30px;
+  color: #0063ff;
+  text-shadow: 1px 1px 2px #414141;
+
+}
+.preco_frete{
+  position: absolute;
+  right: 30px;
+  color: #0063ff;
+  text-shadow: 1px 1px 2px #414141;
+}
+.preco_total{
+  position: absolute;
+  right: 30px;
+  color: #0063ff;
+  text-shadow: 1px 1px 2px #414141;
 }
