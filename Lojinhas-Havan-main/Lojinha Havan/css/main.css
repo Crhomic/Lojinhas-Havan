@@ -9,9 +9,10 @@ html{
 }
 body{
     width: 100%;
-    height: 100%;
-	
+    height: 100%;	
 }
+
+
 .menu-principal{
     width: 100%;
     background-color: #0063ff;
@@ -90,14 +91,61 @@ main{
 .carrinho-de-compras {
 
     display: inline-block;
-    width:none;
+    width: 90px;
 }
+
+
+
+/* apelos_comerciais */
+
+.apelos_comerciais{
+	background-color: #0063ff;
+	position: relative;
+	margin: 30px auto;
+	width: 100%;
+	height: 200px;
+
+}
+.apelos_comerciais ul{
+	display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 38px 0 35px;
+    margin-bottom: 0;
+}
+.apelos_comerciais li{
+	display: list-item;
+    text-align: center;
+}
+
+.icons_ac{
+	display: flex;
+    justify-content: center;
+}
+.icon_ac a{
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #fff;
+	font-family: Helvetica;	
+}
+.icon_ac p{
+	color: #fff;
+	font-family:Helvetica;
+	font-size: 14px;
+}
+.icon_ac img{
+	width: 80px;
+}
+
+
 
 
 /* new session */
 
 
 .box {
+	position: relative;
     background: rgba(236 246 249);
     max-width: 1200px;
 	margin: 0 auto;
@@ -106,12 +154,16 @@ main{
 	
 }
 .box h1 { 
+	position: relative;
     font-size: 2rem;
-    margin: 10px 0px;
+    margin: 10px 45px;
     border: 3px solid none;
     color: #0063ff;
 	text-shadow:1px 1px 2px #414141;
 
+}
+.hr_m{
+	border-color: transparent;
 }
 .raio {
 	background: none;
@@ -139,11 +191,10 @@ main{
 (max-width: 1200px){.container {flex-wrap: wrap;}}
 
 .produto {
-
-    background: none;
+	margin: auto 30px;
 	border: 3px solid none;
 	max-width: auto;
-	padding: 10px;
+	padding: 10px 6px;
 	color: black;
 	position: relative;
     display: flex;
@@ -152,6 +203,21 @@ main{
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+}
+
+.produto__description {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+}
+.produto__description p{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.produto__description p del{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
 }
 
 .produto__desconto {
@@ -164,17 +230,21 @@ main{
 	top: 10px;
 	right: 0px;
 }
-
-.img {
-	width: 150px;
+.title_product{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
 }
 
-.produto__description {
-    background: none;
-	margin-top: 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: left;
+/*
+.barras_verticais{
+	margin: 6px;
+    font-weight: normal;
+    background-color: #c4c4c4;
+    padding: 0.7px
+}
+*/
+.img {
+	width: 150px;
 }
 
 .footer { 
@@ -182,7 +252,7 @@ main{
 	width: 100%;
 	height: 100px;
 	padding: 30px;
-	background-image: url('../rodape/barrinhas_aleatorias.png'), url('../rodape/barrinhas_aleatorias_invertidas.png');
+	background-image: url('../rodape_img/barrinhas_aleatorias.png'), url('../rodape_img/barrinhas_aleatorias_invertidas.png');
 	background-repeat: no-repeat; 
 	background-position: right, left;
 	background-size: 150px;
@@ -190,11 +260,6 @@ main{
 } 
 
 /*
-
-
-
-
-
 */
 
 .test {
@@ -217,7 +282,7 @@ main{
 }
 
 .footer img{
-    margin: 5px ;
+    margin: 10px 30px;
 }
 .footer h2{
 	font-family: Arial, Helvetica, sans-serif;
