@@ -71,7 +71,8 @@ main{
 }
 
 .logo{
-  width: 10rem;
+  width: 90px;
+  margin-top: auto;
 }
 
 .carrinho-de-compras {
